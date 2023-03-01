@@ -60,5 +60,5 @@ jobs:
                 git pull origin main;
                 echo "Install Package and Build Project";
                 npm install;
-                npm run;
+                npm run build;
               }
