@@ -23,7 +23,7 @@ jobs:
       - run: npm run build
 
   deploy:
-    needs: test-buid
+    needs: test-build
     runs-on: ubuntu-latest
 
     strategy:
