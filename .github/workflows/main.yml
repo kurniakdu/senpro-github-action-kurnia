@@ -34,10 +34,10 @@ jobs:
       - name: Build app in VM
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secret.HOST }}
-          username: ${{ secret.USERNAME }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          port: ${{ secret.PORT }}
+          port: ${{ secrets.PORT }}
           script: |
             eval "$(ssh-agent -s)"
             ssh-add ~/.ssh/ssh-senpro-17
